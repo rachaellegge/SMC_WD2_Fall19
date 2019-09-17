@@ -35,9 +35,7 @@ nav li {
     padding: 5px 0px;
     margin: 10px;
 }
-.menu {
-    display: initial;
-}
+
 #toggle:checked + .menu
   {
     display: block;
