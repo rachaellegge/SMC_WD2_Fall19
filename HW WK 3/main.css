@@ -95,7 +95,16 @@ h1 {
 }
 
 @media(min-width:540px){
-    
+    header label {
+        display: none;
+    }
+
+    nav,
+    input#toggler+nav {
+        display: block;
+    }
+
+
     nav ul li {
       display: inline-block;
       padding-bottom: 5px;
