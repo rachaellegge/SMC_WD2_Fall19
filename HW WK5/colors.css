@@ -1,0 +1,22 @@
+.green {
+    background-color: #8bc34a;
+}
+
+
+.greengrass {
+    background-image: url("grass.jpg");
+}
+
+
+
+.blue {
+    background-color: #15a2de;
+}
+
+.bluepaint {
+    background-image: url("bluebrush.png");
+}
+
+.transparent {
+    background-color: transparent;
+}

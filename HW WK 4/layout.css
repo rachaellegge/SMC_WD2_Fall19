@@ -15,6 +15,9 @@ main {
     background-color: #FFE5E6;
 }
 
+h3 {
+    text-align: right;
+}
 
 header input#toggler {
     display:none;
