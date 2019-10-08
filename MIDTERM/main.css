@@ -1,0 +1,115 @@
+@import url("colors.css");
+@import url("navbar.css");
+
+body {
+    margin: 0px;
+}
+
+
+
+/*---------------- MAIN -------------------*/
+
+h1  {
+    font-family: 'UnifrakturCook', cursive;
+    letter-spacing: 3px;
+    font-size: 72px;
+    text-align: center;
+}
+
+h2 {
+font-family: 'Lora', serif;
+text-transform: uppercase;
+letter-spacing: 17px;
+font-size: 20px;
+text-align: center;
+margin-top: -43px;
+}
+
+
+
+.floater-section {
+    float: left;
+    min-height: 300px;
+    width: 100%;
+
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    margin: 25px;
+}
+
+ /* MAIN */
+
+/* MEDIUM SIZED SCREENS */
+
+@media(min-width:540px){
+
+
+    .width-md-25 {
+        width: 25%;
+
+    }
+  
+    .width-md-33 {
+        width: 33.3333333333%;
+    }
+
+    .width-md-50 {
+        width: 50%;
+    }
+
+    .width-md-66 {
+        width: 66%;
+    }
+
+    .width-md-75 {
+        width: 75%;
+    }
+
+    .width-md-100 {
+        width: 100%;
+    }
+
+
+}
+
+/* LARGE SIZED SCREENS */
+
+@media (min-width: 800px) {
+
+    .width-lg-25 {
+        width: 25%;
+
+    }
+  
+    .width-lg-33 {
+        width: 33.3333333333333%;
+    }
+
+    .width-lg-50 {
+        width: 50%;
+    }
+
+    .width-lg-66 {
+        width: 66%;
+    }
+
+    .width-lg-75 {
+        width: 75%;
+    }
+
+    .width-lg-100 {
+        width: 100%;
+    }
+
+}
