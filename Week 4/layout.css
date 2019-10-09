@@ -19,6 +19,7 @@ img {
 
 .content {
     padding: 15px;
+    position: relative;
 }
 
 /* MEDIUM SIZED SCREENS */
