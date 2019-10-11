@@ -12,8 +12,7 @@ body {
 
 .main-title {
     color: #982006;
-    padding: 10px;
-    border-bottom: 2px #466432 solid;
+    border-bottom: 2px #982006 solid;
 }
 
 h1  {
@@ -24,24 +23,36 @@ h1  {
     text-align: center;
 }
 
+.sub-head h2 {
+    margin-top:50px;
+    font-weight:700;
+    font-size:50px;
+    text-transform: none;
+}
+
 h2 {
 font-family: 'Lora', serif;
 text-transform: uppercase;
 letter-spacing: 10px;
-font-size: 18px;
+font-size: 17px;
 text-align: center;
 margin-top: -14px;
-font-weight: 400;
+font-weight: 700;
 }
+
 
 h3 {
-    text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: 17px;
+    font-size: 22px;
     text-align: center;
     font-weight: 700;
+    padding: 20px 0 0 0;
 }
 
+.store-hours {
+    max-width: 300px;
+    margin: auto;
+}
 
 .hours {
     font-size: 22px;
@@ -52,9 +63,9 @@ h3 {
 .hour-title {
     font-weight: 700;
     font-size: 16px;
-    text-transform: uppercase;
     margin-top: 26px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 
@@ -77,8 +88,9 @@ img {
 
 .content {
     margin: auto;
-    max-width: 350px;
 }
+
+
 
 .clearfix {
     padding-bottom: 100px;
@@ -93,24 +105,22 @@ img {
 
 @media(min-width:540px){
 
+    img {
+        position: relative;
+    }
+
     .main-title {
-        background-color: rgba(50, 50, 50, 0.4);
+        background-color: rgba(235,199,184,0.6);
         width: 100%;
-        box-shadow: 0px 0px 11px rgba(50, 50, 50, 0.7);
         position: absolute;
-        top: 188px;
-        color: white;
+        top: 200px;
+        color:#982006;
         width: 100%;
         left: 0;
         line-height: 2em;
         border: none;
     }
 
-
-    .content {
-        margin: auto;
-        max-width: 500px;
-    }
 
     h1 {
         font-size: 60px;
@@ -125,6 +135,11 @@ img {
         font-size: 30px;
         border-bottom: solid black 2px;
         padding: 20px;
+    }
+
+    .store-hours {
+        max-width: 500px;
+        margin: auto;
     }
 
     .hours {

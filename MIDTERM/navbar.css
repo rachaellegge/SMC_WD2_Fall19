@@ -1,5 +1,5 @@
 header {
-    background-color: #FDC072;
+    background-color:#fcede9;
 }
 
 header input#toggler {
@@ -28,9 +28,10 @@ nav ul {
 }
 
 nav li {
-    border-bottom: 1px solid #212529;
+    border-bottom: 1px solid #982006;
     padding: 10px 0px;
     margin: 10px;
+    text-align: center;
 }
 
 nav li:first-child {
@@ -46,10 +47,10 @@ nav ul a {
     letter-spacing: 5px;
 }
 
-nav ul a:hover {
-    color: #466432;
-    font-size: 18px;
+.highlight {
+    color: grey;
 }
+
 
 
 /*---------------- MEDIUM SECTION -------------------*/ 
@@ -80,6 +81,12 @@ nav ul a:hover {
         padding: 0px 10px;
     }
 
+}
+
+nav a:hover {
+    color: #3b3b3b;
+    border-top: 5px solid #982006;  
+    padding-top: 18px;
 }
 
 /*---------------- MEDIUM SECTION END -------------------*/ 
