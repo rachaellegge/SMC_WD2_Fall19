@@ -1,5 +1,8 @@
 header {
-    background-color:#fcede9;
+    background-color: #fcede9;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 header input#toggler {
@@ -7,17 +10,17 @@ header input#toggler {
 }
 
 header label img {
-    width: 40px;
+    width: 35px;
     height: auto;
     margin: 10px;
 }
 
+
 nav {
-    padding: 20px 10px;
     display: none;
 }
 
-input#toggler:checked + nav{
+input#toggler:checked+nav {
     display: block;
 }
 
@@ -53,10 +56,10 @@ nav ul a {
 
 
 
-/*---------------- MEDIUM SECTION -------------------*/ 
+/*---------------- MEDIUM SECTION -------------------*/
 
-@media(min-width: 540px){
-    
+@media(min-width: 540px) {
+
     header label {
         display: none;
     }
@@ -81,12 +84,13 @@ nav ul a {
         padding: 0px 10px;
     }
 
+    nav a:hover {
+        color: #3b3b3b;
+        border-top: 5px solid #982006;
+        padding-top: 18px;
+    }
+
 }
 
-nav a:hover {
-    color: #3b3b3b;
-    border-top: 5px solid #982006;  
-    padding-top: 18px;
-}
 
-/*---------------- MEDIUM SECTION END -------------------*/ 
+/*---------------- MEDIUM SECTION END -------------------*/
