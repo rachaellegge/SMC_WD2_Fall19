@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+                <nav id="navBar">
+                    <button id="colorButton">Color Me!</buttion>
+                    <button id="sizeButton">Scale Me!</buttion>
+                    <button id="shadowButton">Shadow Me!</buttion>
+                    <button id="alignButton">Align Me!</buttion>
+                    <button id="borderButton">Border Me!</buttion>
+                </nav>
+            </header>
+        
+            <main>
+                <div id="contentMain">
+                    <h1>Hello, World!</h1>
+                </div>
+            </main>
+        
+            <footer>
+        
+            </footer>
+
+            <script>
+            document.getElementById("colorButton").addEventListener( "click", function(){
+
+                var mainContent = document.getElementById("contentMain");
+                var redComponent = Math.random()*255;
+                var greenComponent = Math.random()*255;
+                var blueComponent = Math.random()*255;
+                var compRGBString = "rgb(" + redComponent + "," + greenComponent + "," + blueComponent + ")";
+
+                mainContent.style.backgroundColor = compRGBString;
+            } );
+
+            document.getElementById("sizeButton").addEventListener( "click", function(){
+                document.getElementById("contentMain").style.fontSize = "xx-large";
+            } );  
+
+            document.getElementById("shadowButton").addEventListener( "click", function(){
+                document.getElementById("contentMain").style.textShadow = "5px 5px 1px #ff0000, 10px 10px 1px #0000ff";
+            } );   
+
+            document.getElementById("alignButton").addEventListener( "click", function(){
+            
+            var mainContent = document.getElementById("contentMain");
+            var alignarray=['left','center','right'];
+            mainContent.style.textAlign=alignarray[Math.round(Math.random()*3)];
+            } ); 
+
+            document.getElementById("borderButton").addEventListener( "click", function(){
+                document.getElementById("contentMain").style.border = "thick solid #0000FF";
+            } );   
+
+            
+
+
+        
+            document.getElementById("contentMain").style.backgroundColor = "rgb(255,0,0)";
+
+            alert("this is our very first javascript written!");
+
+
+            </script>
+</body>
+</html>
