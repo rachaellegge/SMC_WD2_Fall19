@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.flex-container {
+    background-color: palevioletred;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.flex-navbar {
+    display:flex;
+    margin: auto;
+    max-width: 600px;
+    background-color: #a6c38e;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+img {
+    height: 200px;
+}
+
+.more {
+    height: 600px;
+}
+
+.home {
+    height: 450px;
+}
+
+.logo {
+    display:flex;
+    height: 100px;
+    margin: auto;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+
+.flex-item:nth-child(1) {
+    background-color: #e6bdb3;
+    align-items: stretch;
+}
+
+.flex-item:nth-child(2) {
+    background-color: #d6ba90;
+}
+
+.flex-item:nth-child(3) {
+    background-color: deepskyblue;
+}
+
+.flex-item:nth-child(4) {
+    background-color: lightsteelblue;
+}
+
+.flex-item:nth-child(5) {
+    background-color: mintcream;
+}
+
+.flex-item:nth-child(6) {
+    background-color: powderblue;
+}
