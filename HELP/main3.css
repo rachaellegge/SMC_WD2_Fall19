@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns:1fr 2fr 1fr;
+    grid-template-columns:1fr 1fr;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     justify-items:stretch;
@@ -18,8 +18,7 @@
 }
 
 .box1 {
-    grid-column:1/4;
-    grid-row:1/4;
+    
 }
 
 .box2 {
@@ -31,6 +30,5 @@
 }
 
 .box4 {
-  grid-column:2/3;
-  grid-row:2/3;  
+  
 }
