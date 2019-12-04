@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS grid examples</title>
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase:400,700|Quicksand:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+        <header>
+                <label for="toggler">
+                    <img id="imageToSwitch" onclick="changeImage()" src="tree.png">
+                </label>
+                <input type="checkbox" id="toggler">
+        
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="highlight">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="blog.html">our work</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <div class="header-shim"></div>
+    <main>
+    <div class="grid-header">
+        <div class="box box1"><img src="koala1.jpg"></div>
+        <div class="box box2"><h1>no tree</h1></div>
+        <div class="box box3"><h1>no me</h1></div>
+    </div>
+
+    <div class="grid-call">
+        <div class="call box4"><img src="koalavertical1.jpg"></div>
+        <div class="call box5"><h2>adopt</h2></div>
+        <div class="call box6"><img src="koalavertical2.jpg"></div>
+        <div class="call box7"><h2>plant</h2></div>
+        <div class="call box8"><img src="koala3.jpg"></div>
+    
+    </div>
+
+    
+    <script>
+            function changeImage()
+            {
+            element=document.getElementById('imageToSwitch')
+            if (element.src.match("leaf"))
+            {
+            element.src="tree.png";
+            }
+            else
+            {
+            element.src="leaf.png";
+            }
+            }
+    </script>
+</body>
+</html>

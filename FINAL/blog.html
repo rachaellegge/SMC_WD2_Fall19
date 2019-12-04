@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS grid examples</title>
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase:400,700|Quicksand:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+        <header>
+                <label for="toggler">
+                    <img id="imageToSwitch" onclick="changeImage()" src="tree.png">
+                </label>
+                <input type="checkbox" id="toggler">
+        
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="blog.html" class="highlight">our work</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <div class="header-shim"></div>
+    <main>
+
+    <div class="grid">
+        <div class="box box1"><img src="koala4.jpg"></div>
+        <div class="box box2"><h2>01</h2></div>
+        <div class="box box3">
+            <div class="green"><h3>Kola in Danger Near You?</h3></div>
+                <h4>FACT: Meaningful legislation is the only way to protect koalas!!</h4>
+            <p>There is currently no legislation, anywhere in the country,<span id="dots">...</span><span id="more">  that can protect Koalas and Koala habitat in Australia. The listing of the koala as “vulnerable” under the Environmental Protection and Biodiversity Conservation Act in 2012 changed nothing. This is supposed to be the premier law for protecting Australia’s environment, yet it is powerless.
+            <br><br>
+            By the time you read this page the bulldozers may already be working, but it is not too late to take action. Below we have listed some of the things that might make a difference.
+                <br><br>
+            
+            Join the Koala Army. The Australian Koala Foundation is committed to the introduction of a Koala Protection Act to provide real legislative protection for koalas, and we need your help.
+            <br><br>
+            Media attention can help. Contact your local newspaper. Often they will have an environmental reporter who may be interested in the plight of your Koalas. Write letters to the editor of your local and national newspapers.
+            <br><br>
+            Speak to your federal member. The Government needs to hear your story to convince them to protect Koalas and their habitat. More here.</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+        <div class="box box4"><img src="koala6.jpg"></div>
+        <div class="box box5"><h2>02</h2></div>
+        <div class="box box6">
+            <div class="green"><h3>more koala news</h3></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span id="dots">...</span><span id="more">
+            Quam quidem doloremque exercitationem architecto libero laudantium sequi ratione impedit molestiae natus non obcaecati officiis molestias labore laboriosam temporibus ea, delectus illo. Qui praesentium minima repellat culpa odit doloremque officia quisquam itaque. Doloribus laboriosam dolorem accusamus, illo, saepe praesentium a suscipit nulla consequatur aliquid, impedit laudantium earum obcaecati ipsa. Natus corrupti sequi, itaque explicabo consequatur repellendus dolore. Ex eius quia earum similique libero perferendis perspiciatis, facilis cum molestiae dolorem, exercitationem nam in!</span></p>
+            <button onclick="myFunction()" id="myBtn2">Read more</button>
+            </div>
+            
+            <div class="box box7"><img src="koalahorz.jpg"></div>
+        <div class="box box8"><h2>03</h2></div>
+        <div class="box box9">
+            <div class="green"><h3>more koala news</h3></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span id="dots">...</span><span id="more">
+            Quam quidem doloremque exercitationem architecto libero laudantium sequi ratione impedit molestiae natus non obcaecati officiis molestias labore laboriosam temporibus ea, delectus illo. Qui praesentium minima repellat culpa odit doloremque officia quisquam itaque. Doloribus laboriosam dolorem accusamus, illo, saepe praesentium a suscipit nulla consequatur aliquid, impedit laudantium earum obcaecati ipsa. Natus corrupti sequi, itaque explicabo consequatur repellendus dolore. Ex eius quia earum similique libero perferendis perspiciatis, facilis cum molestiae dolorem, exercitationem nam in!</span></p>
+            <button onclick="myFunction()" id="myBtn3">Read more</button>
+            </div>
+</div>
+
+    <script>
+            function changeImage()
+            {
+            element=document.getElementById('imageToSwitch')
+            if (element.src.match("leaf"))
+            {
+            element.src="tree.png";
+            }
+            else
+            {
+            element.src="leaf.png";
+            }
+            }
+
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+          
+    </script>
+</body>
+</html>
