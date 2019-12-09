@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>save the koala</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:500,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="tree.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+        <header>
+                <label for="toggler">
+                    <img id="imageToSwitch" onclick="changeImage()" src="tree.png">
+                </label>
+                <input type="checkbox" id="toggler">
+        
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="highlight">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="blog.html">our work</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <div class="header-shim"></div>
+    <main>
+    <div class="grid">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+
+    </div>
+    </main>
+    <footer>
+        <div class="grid-footer">
+           <div class="charityImg"><img src="charity.png"></div>
+           <div class="disclamer"><p>Koalas are disappearing. Loss of koala habitat and koala food trees (eucalyptus leaves) is the leading koala threat. Our cuddly koalas are loved around the world. Often called a koala bear, they are actually marsupials not koala bears. Please help koalas by supporting the Australian Koala Foundation. Find koala information here - Save the koala!</p>
+        
+            <p class="bold">© Copyright 2019 All rights reserved. Australian Koala Foundation</p>
+        </div>
+      </footer>
+
+    <script>
+            function changeImage()
+            {
+            element=document.getElementById('imageToSwitch')
+            if (element.src.match("leaf"))
+            {
+            element.src="tree.png";
+            }
+            else
+            {
+            element.src="leaf.png";
+            }
+            }
+    </script>
+</body>
+</html>

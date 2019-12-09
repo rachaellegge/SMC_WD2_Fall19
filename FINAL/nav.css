@@ -3,12 +3,12 @@ body {
 }
 
 header {
-    background-color:#F2E8E4;
+    background-color: #F2E8E4;
     top: 0px;
     position: fixed;
     width: 100%;
     z-index: 10;
-    
+
 }
 
 header input#toggler {
@@ -44,9 +44,9 @@ nav ul {
 
 nav li {
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 10px;
+    padding: 25px;
     border-top: 2px solid #65a593;
 }
 
@@ -61,7 +61,9 @@ nav ul a {
     text-decoration: none;
     color: #696673;
     text-transform: uppercase;
-    letter-spacing: 5px;   
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 .highlight {
@@ -69,10 +71,41 @@ nav ul a {
 }
 
 
+.grid-footer {
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(auto);
+    background-color: #f2e8e4; 
+}
+
+.charityImg > img {
+    width: 100%;
+    object-fit: contain;
+    height:60px;
+    padding-top: 20px;
+}
+
+.disclamer > p {
+    padding: 25px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    color: grey;
+    line-height: 18px;
+}
+
+.bold > p{
+    font-weight: 700;
+}
+
 
 /*---------------- MEDIUM SECTION -------------------*/
 
-@media(min-width: 560px) {
+@media(min-width: 590px) {
 
     header {
         height: 50px;
@@ -85,7 +118,7 @@ nav ul a {
     .header-shim {
         height: 50px;
     }
-    
+
 
     nav,
     input#toggler+nav {
@@ -95,7 +128,7 @@ nav ul a {
     nav ul li {
         display: inline-block;
         padding-bottom: 5px;
-        margin: 20px;
+        margin: 15px;
         border-top: 0px;
     }
 
@@ -116,4 +149,38 @@ nav ul a {
         border-bottom: 3px solid #65a593;
     }
 
+/* FOOTER */
+
+.grid-footer {
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(auto);
+    background-color: #f2e8e4; 
 }
+
+.charityImg > img {
+    width: 100%;
+    object-fit: contain;
+    height:100px;
+    padding-top: 20px;
+}
+
+.disclamer > p {
+    padding: 25px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    color: grey;
+    line-height: 18px;
+}
+
+.bold > p{
+    font-weight: 700;
+}
+
+}
+
