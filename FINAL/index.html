@@ -20,24 +20,27 @@
                     <ul>
                         <li><a href="index.html" class="highlight">home</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="blog.html">our work</a></li>
+                        <li><a href="blog.html">blog</a></li>
                         <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
                     </ul>
                 </nav>
             </header>
         
             <div class="header-shim"></div>
     <main>
+    <div class="container">
     <div class="grid-header">
         <div class="box box1"><img src="koala11.jpg"></div>
         <div class="box box2"><h1>no tree</h1></div>
         <div class="box box3"><h1>no me</h1></div>
     </div>
+    
 
     <div class="grid-call">
-        <div class="call box4"><img src="grow-03.png"><h2>plant</h2></div>
-        <div class="call box5"><img src="adopt-04.png"><h2>adopt</h2></div>
-        <div class="call box6"><img src="donate-05.png"><h2>donate</h2></div>
+        <div class="call box4"><a href><img src="grow-03.png"><h2>plant</h2></a></div>
+        <div class="call box5"><a href=""><img src="adopt-04.png"><h2>adopt</h2></a></div>
+        <div class="call box6"><a href="donate.html"><img src="donate-05.png"><h2>donate</h2></a></div>
     </div>
 
     <div class="grid-gallery">
@@ -47,6 +50,7 @@
     <div class="gall box10"><img src="koala1.jpg"></div>
     <div class="gall box10"><img src="koala9.jpg"></div>
     <div class="gall box10"><img src="koala10.jpg"></div>
+</div>
 </div>
 
 </main>
@@ -60,20 +64,7 @@
     </div>
 </footer>
 
-    
-    <script>
-            function changeImage()
-            {
-            element=document.getElementById('imageToSwitch')
-            if (element.src.match("leaf"))
-            {
-            element.src="tree.png";
-            }
-            else
-            {
-            element.src="leaf.png";
-            }
-            }
-    </script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -2,6 +2,17 @@ body {
     margin: 0;
 }
 
+.container {
+    max-width:1000px;
+    margin: auto;
+    border-right: #98A665 3px solid;
+    border-left: #98A665 3px solid;   
+}
+
+hr {
+    color: #98A665;
+}
+
 header {
     background-color: #F2E8E4;
     top: 0px;
@@ -70,11 +81,11 @@ nav ul a {
     color: grey;
 }
 
+/*-------FOOTER--------*/
 
 .grid-footer {
     display: grid;
     grid-template-columns:repeat(1,1fr);
-    grid-gap: 10px;
     grid-auto-rows: minmax(auto);
     background-color: #f2e8e4; 
 }
@@ -101,6 +112,7 @@ nav ul a {
 .bold > p{
     font-weight: 700;
 }
+
 
 
 /*---------------- MEDIUM SECTION -------------------*/

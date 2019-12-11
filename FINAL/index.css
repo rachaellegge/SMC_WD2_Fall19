@@ -73,6 +73,8 @@ img {
     grid-auto-rows: minmax(100px, auto);
 }
 
+
+
 .call>img {
     width: 100%;
     object-fit: contain;
@@ -80,8 +82,22 @@ img {
     margin-top: 10px;
 }
 
+a > img {
+    width: 100%;
+    object-fit: contain;
+    height: 125px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+
+
 .call {
-    border-bottom: 3px solid darkslategrey;
+    border-bottom: 1px solid grey;
 }
 
 /* GRID LAYOUTS GALLERY*/
@@ -90,6 +106,7 @@ img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
+    padding: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
 
@@ -240,12 +257,12 @@ img {
 
 /*---------------- X LARGE SECTION -------------------*/
 
-@media(min-width: 1200px) {
+@media(min-width: 1000px) {
 
     h1 {
         font-family: 'Anton', sans-serif;
         font-weight: 700;
-        font-size: 175px;
+        font-size: 150px;
         color: white;
         letter-spacing: 2px;
         margin: 0px;
@@ -262,7 +279,7 @@ img {
 
 
     .box1>img {
-        height: 700px;
+        height: 500px;
     }
 
     .grid-gallery {

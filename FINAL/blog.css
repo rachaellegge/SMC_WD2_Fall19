@@ -1,11 +1,5 @@
 @import url("nav.css");
 
-#more {
-    display: none;
-}
-
-
-
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,13 +8,17 @@
     align-items:stretch;
     margin-right: 20px;
     margin-left: 20px;
-    grid-auto-rows: minmax(250px, auto);
+    grid-auto-rows: minmax(auto);
 }
 
 
 img {
     width: 100%;
     object-fit: cover;
+}
+
+.pic > img {
+    height: 220px;
 }
 
 h2 {
@@ -35,6 +33,7 @@ h3 {
     font-family: 'Anton', sans-serif;
     padding: 15px;
     text-align: center;
+    background-color: #65a593;
     color:white;
     margin: 0;
     font-size: 30px;
@@ -49,55 +48,77 @@ h4 {
     font-weight: 700;
     color: black;
     text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 24px;
     font-weight: 500;
     color: darkslategrey;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.green {
-    background-color: #65a593; 
+#text{
+    display:none;
 }
 
-.grid > img {
-    height: 250px;
+#text2{
+    display:none;
+}
+
+#text3{
+    display:none;
 }
 
 
 
-.box1 {
+button {
+    color: #64a593;
+    font-size: 26px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    padding-bottom:30px;
+    outline: none;
+}
+
+.img1 {
     grid-column:1/2;
     grid-row:1/2;
 }
 
-.box2 {
+.no1 {
     grid-column:1/2;
     grid-row:1/2;
     justify-self: start;
 }
 
-.box4 {
+.img2 {
     grid-column: 1/2;
     grid-row: 3;
 }
 
-.box5 {
+.no2 {
     grid-column: 1/2;
     grid-row: 3;
     justify-self: start;
 }
 
-.box7 {
+.img3 {
     grid-column: 1/2;
     grid-row: 5;
 }
 
-.box8 {
+.no3 {
     grid-column: 1/2;
     grid-row: 5;
     justify-self: start;
@@ -105,7 +126,7 @@ p {
 
 /*---------------- MEDIUM SECTION -------------------*/
 
-@media(min-width: 560px) {
+@media(min-width: 575px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -115,7 +136,7 @@ p {
         margin-right: 20px;
         margin-left: 20px;
         grid-gap: 20px;
-        grid-auto-rows: minmax(250px, auto);
+        grid-auto-rows: minmax(auto);
     }
     
     
@@ -131,67 +152,48 @@ p {
         font-size: 110px;
         margin-top:0;
     }
-
-    .green {
-        background-color: transparent;
+  
+    
+    .pic > img {
+        height: 350px;
     }
     
-    h3 {
-        font-family: 'Anton', sans-serif;
-        padding: 15px;
-        text-align: center;
-        color: #65a593;
-        margin: 0;
-        font-size: 25px;
-        font-weight: 700;
-        font-size: 40px;
-        letter-spacing: 2px;
-    }
-
-    p {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: capitalize;
-        font-size: 12px;
-        font-weight: 500;
-        color: darkslategrey;
-    }
-    
-    .grid > img {
-        height: 500px;
-    }
-    
-    
-    
-    .box1 {
+    .img1 {
         grid-column:1/2;
         grid-row:1/2;
     }
     
-    .box2 {
+    .no1 {
         grid-column:1/2;
         grid-row:1/2;
         justify-self: start;
     }
     
-    .box4 {
+    .img2 {
     grid-column: 2;
     grid-row: 2;
     }
     
-    .box5 {
+    .no2 {
         grid-column: 2;
         grid-row: 2;
         justify-self: start;
     }
     
-    .box7 {
+    .img3 {
         grid-column: 1;
         grid-row: 3;
     }
     
-    .box8 {
+    .no3 {
         grid-column: 1;
         grid-row: 3;
         justify-self: start;
+    }
+}
+
+@media(min-width: 800px) {
+    .pic > img {
+        height: 400px;
     }
 }
