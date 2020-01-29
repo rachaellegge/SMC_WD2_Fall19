@@ -27,6 +27,7 @@ h1 {
     font-weight: 700;
     font-size: 35px;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 p {
@@ -43,7 +44,7 @@ p {
 
 h2 {
     font-family: 'Anton', sans-serif;
-    color: #A66458;
+    color: #485563;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -66,6 +67,7 @@ h4 {
     color: grey;
     text-align: center;
     margin: 10px 0 30px 0;
+    text-transform: uppercase;
 }
 
 

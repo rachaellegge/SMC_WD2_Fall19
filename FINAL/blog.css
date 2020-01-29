@@ -27,6 +27,7 @@ h2 {
     color:white;
     font-weight: 500;
     font-size: 110px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -38,6 +39,8 @@ h3 {
     margin: 0;
     font-size: 30px;
     letter-spacing: 2px;
+    text-transform: uppercase;
+
 }
 
 h4 {

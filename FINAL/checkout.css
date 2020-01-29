@@ -14,7 +14,7 @@
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background: #dbe2cb;
+    background: #ececec;
     padding: 20px 20px;
     outline: none;
     color: black;
@@ -40,7 +40,7 @@
   }
 
   .btn:hover {
-    background: #dbe2cb;
+    background: #ececec;
     color: black;
   }
 

@@ -3,9 +3,7 @@
 
 .container {
   max-width:1000px;
-  margin: auto;
-  border-right: #98A665 3px solid;
-  border-left: #98A665 3px solid;   
+  margin: auto; 
 }
 
 .donate-buttons>li>a {
@@ -18,8 +16,8 @@
 
 .btn-blue-other,
 .btn-blue {
-  background-color: #dbe2cb;
-  color: #63a593;
+  background-color:#29323c;
+  color: white;
   font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
   font-size: 20px;
@@ -54,16 +52,16 @@ button {
 #other-input input {
   position: relative;
   font-weight: bold;
-  background-color: #fff;
+  background-color:#29323c;
   border-radius: 5px;
   border: 0;
   padding: 0 0 3px 15px;
   width: 75px;
   height: 50px;
   outline: none;
-  border: 5px solid #a66358;
+  border: 5px solid #29323c;
   font-family: 'Anton', sans-serif;
-  color: #a66358;
+  color: #29323c;
   font-size: 20px;
   letter-spacing: 2px;
 }
@@ -77,7 +75,7 @@ input[type=number]::-webkit-outer-spin-button {
 #other-input span {
   font-family: inherit;
   font-family: 'Anton', sans-serif;
-  color: #a66358;
+  color:  #63a592;
   position: absolute;
   padding: 19px 12px;
   z-index: 10;
@@ -98,10 +96,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .donate-buttons .active {
-  background-color: #F2E8E4;
-  border: 5px solid #a66358;
+  background-color: #485563;
+  border: 5px solid #29323c;
   font-family: 'Anton', sans-serif;
-  color: #a66358;
+  color: #63a592;
   outline: none;
 }
 
@@ -168,7 +166,7 @@ ul {
 }
 
 h1.title1 {
-  font-size: 38px;
+  font-size: 50px;
     margin: 15px;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -176,6 +174,7 @@ h1.title1 {
     /* text-align: right; */
     color: #ffffff;
     opacity: .8;
+    text-transform: uppercase;
 }
 
 .imgbox {
@@ -194,7 +193,7 @@ h1.title1 {
 
 h1 {
   font-family: 'Anton', sans-serif;
-  color: #a66358;
+  color:  #485563;
   font-size: 120px;
   letter-spacing: 7px;
   margin: auto;
@@ -205,7 +204,7 @@ h1 {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  color: #98A665;
+  color: #485563;
   font-weight: 700;
 }
 
@@ -239,7 +238,7 @@ h2 {
 
 
 h3 {
-  color: #a66358;
+  color:  #63a592;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -284,7 +283,7 @@ margin: 5px;
 
 h1 {
   font-family: 'Anton', sans-serif;
-  color: #a66358;
+  color:  #485563;
   font-size: 200px;
   letter-spacing: 7px;
   margin: auto;
@@ -314,7 +313,7 @@ h2 {
   width: 140px;
   height: 70px;
   padding: 0 0 3px 25px;
-  border: 5px solid #a66358;
+  border: 5px solid  #63a592;;
   font-size: 22px;
 }
 
@@ -352,8 +351,6 @@ button {
   
   .btn-blue-other,
   .btn-blue {
-    background-color: #dbe2cb;
-    color: #63a593;
     font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
     font-size: 20px;

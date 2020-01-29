@@ -20,6 +20,7 @@ h2 {
     font-weight: 500;
     color: grey;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* GRID LAYOUTS HEADER*/
